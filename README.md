@@ -16,5 +16,3 @@ Needed AWS Services:
  - SSM
 
 AND Github Account
- 
- 
