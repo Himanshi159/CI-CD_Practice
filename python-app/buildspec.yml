@@ -30,3 +30,14 @@ artifacts:
   files:
     - '**/*'
   base-directory: ./python-app
+
+# S3 configuration for artifacts
+artifacts:
+  files:
+    - '**/*'
+  base-directory: './python-app'
+  discard-paths: no
+  name: 'myapp-output-artifact'
+  # Define the bucket where artifacts should be stored
+  # Ensure permissions for this bucket are correctly set
+  destination: 'arn:aws:s3:::my-bucket-name/path/to/store/'
